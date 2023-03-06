@@ -11,7 +11,7 @@ function MessageHistory ({messages}) {
                         <div>
                             Author: {message.from.name} {message.time}
                         </div>
-                        <div>
+                        <div className={styles.chat}>
                             Text: {message.text} {message.type}
                         </div>
                     </li>

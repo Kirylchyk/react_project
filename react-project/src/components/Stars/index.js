@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styles from "./Stars.module.css";
 
-
 const StarRating = () => {
     const [rating, setRating] = useState(0);
     return (
