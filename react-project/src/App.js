@@ -2,9 +2,10 @@ import React from "react";
 import Greeting from "./components/Greeting";
 import Counter from "./components/Counter";
 import ShopCard from "./components/ShopCard";
-import StarRating from "./components/Stars";
-import "./App.css"
+import Stars from "./components/Stars";
+import "./App.module.css";
 import MessageHistory from "./components/MessageHistory";
+import {BrowserRouter, Route, Routes, Link} from "react-router-dom";
 
 
 const item = [{
@@ -54,13 +55,35 @@ const messages = [{
 
 
 function App() {
-  return (<div>
-    <Greeting />
-    <Counter />
-    <ShopCard item={item} />
-    <StarRating />
-    <MessageHistory messages={messages}/>
-  </div>);
+  return (
+      <BrowserRouter>
+        <ul>
+          <li>
+            <Link to="/">Home - Greeting</Link>
+          </li>
+          <li>
+            <Link to="/Stars">Stars</Link>
+          </li>
+          <li>
+            <Link to="/Counter">Counter</Link>
+          </li>
+          <li>
+            <Link to="/ShopCard">ShopCard</Link>
+          </li>
+          <li>
+            <Link to="/MessageHistory">MessageHistory</Link>
+          </li>
+        </ul>
+
+        <Routes>
+          <Route path="/Stars" element={<Stars/>} />
+          <Route path="/ShopCard" element={<ShopCard item={item}/>} />
+          <Route path="/Counter" element={<Counter/>} />
+          <Route path="/MessageHistory" element={<MessageHistory messages={messages}/>} />
+          <Route path="/" element={<Greeting/>} />
+        </Routes>
+      </BrowserRouter>
+  );
 }
 
 export default App;

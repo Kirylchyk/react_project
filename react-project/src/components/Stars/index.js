@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import styles from "./Stars.module.css";
 
-const StarRating = () => {
+const Stars = () => {
     const [rating, setRating] = useState(0);
     return (
         <div className="star-rating">
@@ -22,4 +21,4 @@ const StarRating = () => {
     );
 };
 
-export default StarRating;
+export default Stars;

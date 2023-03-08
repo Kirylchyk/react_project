@@ -4,11 +4,11 @@ import styles from './MessageHistory.module.css';
 function MessageHistory ({messages}) {
 
     return (
-        <ul>
+        <ul className={styles.container}>
             {messages.map(message => {
                 return (
                     <li className={styles.chat} key={message.id}>
-                        <div>
+                        <div className={styles.chat}>
                             Author: {message.from.name} {message.time}
                         </div>
                         <div className={styles.chat}>

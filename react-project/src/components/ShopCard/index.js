@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './ShopCard.module.css';
 
 function ShopCard({item}) {
 
     return (
-        <ul>
+        <ul className={styles.container}>
             {/*{item.map(item => <li key={item.id}>{item.brand}</li>)}*/}
             {/*{item.map(item => <li key={item.id}>{item.title}</li>)}*/}
             {/*{item.map(item => <li key={item.id}>{item.description}</li>)}*/}
@@ -12,8 +13,6 @@ function ShopCard({item}) {
             {/*{item.map(item => <li key={item.id}>{item.currency}</li>)}*/}
             {item.map(item => <li key={item.id}>{Object.entries(item)}</li>)}
         </ul>
-
-
 
     );
 
