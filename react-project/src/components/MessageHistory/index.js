@@ -9,7 +9,8 @@ function MessageHistory ({messages}) {
                 return (
                     <li className={styles.chat} key={message.id}>
                         <div className={styles.chat}>
-                            Author: {message.from.name} {message.time}
+                            <p className={styles.peopleList}> Author: {message.from.name}</p>
+                            <p className={styles.messageDataTime}>{message.time}</p>
                         </div>
                         <div className={styles.chat}>
                             Text: {message.text} {message.type}

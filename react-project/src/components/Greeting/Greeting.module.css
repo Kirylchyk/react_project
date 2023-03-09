@@ -3,7 +3,7 @@
     border: none;
     padding: 14px;
     color: white;
-    background: lightsteelblue;
+    background: darkseagreen;
     width: 90%;
     font-size: 14px;
 
@@ -11,10 +11,10 @@
 
 
 .text{
-    font-family: "Times New Roman", Times, serif;
-    color: royalblue;
+    color: dimgrey;
     font-size: 14px;
     text-align: center;
-    text-indent: 50px;
+    text-transform: capitalize;
+    text-decoration-line: underline;
 
 }

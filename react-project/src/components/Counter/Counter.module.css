@@ -1,0 +1,24 @@
+.container{
+    border-radius: 3px;
+    border: none;
+    padding: 14px;
+    color: yellowgreen;
+    width: 90%;
+    font-size: 14px;
+    align-content: center;
+
+}
+
+.button {
+    background-color: lightyellow;
+    border: 2px;
+    outline: 2px;
+    cursor: pointer;
+}
+
+.button02 {
+    background-color: palevioletred;
+    border: 2px;
+    outline: 2px;
+    cursor: pointer;
+}

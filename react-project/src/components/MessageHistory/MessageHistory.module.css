@@ -39,9 +39,10 @@ body {
   position: relative;
   left: -25px;
 }
-.people-list ul {
+.peopleList ul {
   padding: 20px;
   height: 770px;
+  color: dimgrey;
 }
 .people-list ul li {
   padding-bottom: 20px;
@@ -103,7 +104,7 @@ body {
 .chat .chat-history .message-data {
   margin-bottom: 15px;
 }
-.chat .chat-history .message-data-time {
+.messageDataTime {
   color: #a8aab1;
   padding-left: 6px;
 }
